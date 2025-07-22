@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+
+    <audio src="midia/rap-mp3.mp3" controls autoplay></audio> <!--MP3 WAV OGG -->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/rap-mp3.mp3" type="audio/mpeg">
+        <source src="midia/rap-mp3.ogg" type="audio/ogg">
+        <source src="midia/rap-mp3.wav" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir <a href="midia/rap-mp3.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio> <!--Outra opção de audio-->
+
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/foto-p.png" controls> 
+        <source src="midia/video.webm.webm" type="video/webm">
+        <source src="midia/video.m4v.m4v" type="video/m4v">
+        <source src="midia/video.mp4.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de video.</p>
+    </video>
+
+    <h1>Videos externos hospedados do YT</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=IxTZ5WwQaG_FBYpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
