@@ -14,7 +14,7 @@ TV: acima de 1280px */
 
 @media screen and (min-width: 768px) and (max-width: 768px) { /*TABLET*/
     body {
-        background-image: url(..imagens/back-tablet.jpg);
+        background-image: url(imagens/back-tablet.jpg);
     }
 
     img#phone { display: none; } 
